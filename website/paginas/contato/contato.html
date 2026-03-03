@@ -1,0 +1,88 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../estilo/contato.css">
+    <link rel="icon" type="image/x-icon" href="../../../imagens/FullTechIcon.png">
+    <title>Contato</title>
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul class="navbar">
+            <div class="logo">
+                <img src="../../../imagens/Fulltech_Logo.png" alt="Logo da FullTech" class="logo">
+            </div>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <div class="container-contato">
+
+                <div class="info-contato">
+                    <h2>Fale Conosco</h2>
+                    <p style="margin-bottom: 24px;">Tem alguma dúvida, sugestão ou quer fazer uma encomenda especial? Entre
+                        em contato!</p>
+
+                    <div class="dados-loja">
+                        <div class="item-dado">
+                            <span>📍</span>
+                            <p><strong>Endereço:</strong><br>Rua das tecnologia, 123 - Centro</p>
+                        </div>
+
+                        <div class="item-dado">
+                            <span>📞</span>
+                            <p><strong>Telefone / WhatsApp:</strong><br>(11) 4002-8922</p>
+                        </div>
+
+                        <div class="item-dado">
+                            <span>⏰</span>
+                            <p><strong>Horário de Funcionamento:</strong><br>Seg a Sex: 06h às 20h<br>Sáb e Dom: 07h às 18h
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722441.7148868192!2d-46.87024174915749!3d-23.470183316939018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50525cb0bf3d%3A0x8bf524d47bc7cfda!2sFullTech%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1772564467915!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="form-contato">
+                    <h3>Envie uma mensagem</h3>
+                    <form>
+                        <div class="grupo-input">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo">
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Seu e-mail">
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto">
+                                <option value="duvida">Dúvida</option>
+                                <option value="encomenda">Problemas com Site</option>
+                                <option value="elogio">Erro com Login</option>
+                                <option value="trabalhe">Trabalhe Conosco</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+    </body>
+</html>
