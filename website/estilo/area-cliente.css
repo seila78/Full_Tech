@@ -57,6 +57,11 @@ nav span:hover {
     border-bottom: 2px solid #14c204;
 }
 
+.selected {
+    color: #f5f5f5;
+    border-bottom: 2px solid #14C204;
+}
+
 .perfil-faixa{
     display: flex;
     height: 260px;
