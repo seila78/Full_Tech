@@ -210,6 +210,7 @@ nav span:hover {
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
+    border: none;
     padding: 12px 60px;
     border-radius: 50px; 
     margin-bottom: 25px;
@@ -223,4 +224,65 @@ nav span:hover {
 .footer-text {
     font-size: 14px;
     color: #000;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-conteudo {
+    background: #ffffff;
+    width: 450px;
+    max-width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: aparecer 0.25s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal-conteudo h2 {
+    margin-bottom: 15px;
+    color: #14C204;
+    font-size: 28px;
+}
+
+.modal-conteudo p {
+    font-size: 18px;
+    color: #333;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.fechar:hover {
+    color: #14C204;
+}
+
+@keyframes aparecer {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
