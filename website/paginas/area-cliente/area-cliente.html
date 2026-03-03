@@ -44,7 +44,7 @@
                     <img src="../../../imagens/status.png" alt="Ícone class="icon">
                 </div>
                 <div class="updates-text">Novas Atualizações</div>
-                <button class="action-button">Abrir</button>
+                <button class="action-button" data-tipo="status">Abrir</button>
                 <div class="footer-text">Confira o progresso do seu site!</div>
             </div>
             <div class="opcao-card">
@@ -54,7 +54,7 @@
                     <img src="../../../imagens/dominio.png" alt="Ícone" class="icon">
                 </div>
                 <div class="updates-text">Novas Atualizações</div>
-                <a href="#" class="action-button">Abrir</a>
+                <button class="action-button" data-tipo="dominio">Abrir</button>
                 <div class="footer-text">Gerencie seus registros e DNS!</div>
             </div>
             <div class="opcao-card">
@@ -64,7 +64,7 @@
                     <img src="../../../imagens/suporte.png" alt="Ícone" class="icon">
                 </div>
                 <div class="updates-text">Nova Atualização</div>
-                <button class="action-button">Abrir</button>
+                <button class="action-button" data-tipo="suporte">Abrir</button>
                 <div class="footer-text">Precisa de ajuda? Abra um Ticket!</div>
             </div>
             <div class="opcao-card">
@@ -74,11 +74,21 @@
                     <img src="../../../imagens/doc.png" alt="Ícone" class="icon">
                 </div>
                 <div class="updates-text">Novas Atualizações</div>
-                <button class="action-button">Abrir</button>
+                <button class="action-button" data-tipo="faturas">Abrir</button>
                 <div class="footer-text">Acesse seus boletos e notas fiscais!</div>
             </div>
         </div>
     </main>
+
+    <div id="Modal" class="modal">
+        <div id="caixaConteudo" class="modal-conteudo">
+            <button id="btnFechar" class="fechar">X</button>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalTexto"></p>
+        </div>
+    </div>
+
+    <script src="../../scripts/area-cliente.js" defer></script>
 </body>
 
 </html>
