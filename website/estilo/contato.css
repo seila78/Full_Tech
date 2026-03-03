@@ -1,0 +1,184 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #FEF9E7;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/vetores-gratis/tecnologia-abstrata-fundo-verde_1035-17926.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        padding: 15px 10%;
+        list-style: none;
+        border-bottom: 1px solid #14c204;
+    }
+
+    .logo img {
+        height: 60px;
+        width: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+        transform: scale(1.02);
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #14c204;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: color 0.2s ease;
+    }
+
+    .navbar a:hover {
+        color: #165204;
+        border-bottom: 2px solid #05350d;
+    }
+
+    .navbar li {
+        margin-left: 25px;
+    }
+
+    .navbar li:first-of-type {
+        margin-left: auto;
+    }
+
+    main {
+        flex: 1;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .container-contato {
+        background-color: #14c204;
+        width: 100%;
+        max-width: 900px; 
+        border-radius: 15px;
+        box-shadow: 5px 10px 30px rgba(91, 236, 115, 0.7);
+        overflow: hidden; 
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .info-contato {
+        background-color: #000000; 
+        color: #FEF9E7; 
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info-contato h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .item-dado {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        gap: 15px;
+    }
+
+    .icone {
+        width: 20px;       
+        height: auto;      
+        vertical-align: middle; 
+        margin-right: 10px; 
+        -webkit-user-select: none;  
+        user-select: none;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden; 
+        border: 2px solid ;
+        margin-top: 1rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    }
+
+    .mapa iframe {
+        display: block; 
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-contato {
+        padding: 3rem;
+    }
+
+    .form-contato h3 {
+        color: #000000;
+        font-size: 1.8rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 1.5rem;
+    }
+
+    .grupo-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .grupo-input label {
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+
+    .grupo-input input,
+    .grupo-input select,
+    .grupo-input textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: inherit;
+        background-color: #fff;
+        resize: none;
+    }
+
+    .grupo-input input:focus,
+    .grupo-input textarea:focus {
+        outline: none;
+        border-color: #000000; 
+        box-shadow: 0 0 5px #f5f5f5;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        padding: 12px;
+        background-color: #000000; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1rem;
+    }
+
+    .btn-enviar:hover {
+        background-color: #222422; 
+    }
