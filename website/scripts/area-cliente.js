@@ -11,12 +11,11 @@ botoes.forEach(botao => {
         event.preventDefault();
         const tipo = botao.dataset.tipo;
 
-        caixa.style.backgroundImage = "none";
-        titulo.style.color = "#14C204";
+        texto.innerHTML = "";
+        caixa.style.background = "#ffffff";
 
         if (tipo === "status") {
-            titulo.textContent = "Status do Projeto";
-            caixa.style.setProperty('background', "url('../imagens/status.png') center/cover no-repeat", 'important');
+            titulo.textContent = "Faturas";
         }
 
         if (tipo === "dominio") {
@@ -29,6 +28,21 @@ botoes.forEach(botao => {
 
         if (tipo === "faturas") {
             titulo.textContent = "Faturas";
+            texto.innerHTML = `
+                <img src="../../../imagens/testee.png" 
+                     alt="Status" 
+                     style="width: 100%; border-radius: 10px; margin-top: 10px; display: block;">
+                <div class="modal-botoes">
+                <button class="btn-modal btn-pdf">
+                    <span class="icon-download"></span>
+                    Baixar PDF
+                </button>
+
+                <button class="btn-modal btn-pix">
+                    Pagar Agora (Pix)
+                </button>
+        </div>
+            `;
         }
 
         modal.style.display = "flex";
