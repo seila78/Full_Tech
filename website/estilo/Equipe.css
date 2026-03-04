@@ -83,6 +83,10 @@ nav span:hover {
     border-radius: 100px;
 }
 
+.membrosIndividual a{
+    color: black;
+    text-decoration: none;
+}
 .cardMembros{
     display: flex;
     flex-direction: row;
