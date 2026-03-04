@@ -29,7 +29,7 @@ botoes.forEach(botao => {
         if (tipo === "faturas") {
             titulo.textContent = "Faturas";
             texto.innerHTML = `
-                <img src="../../../imagens/testee.png" 
+                <img src="../../../imagens/faturas.png" 
                      alt="Status" 
                      style="width: 100%; border-radius: 10px; margin-top: 10px; display: block;">
                 <div class="modal-botoes">
