@@ -276,6 +276,70 @@ nav span:hover {
     color: #14C204;
 }
 
+.modal-botoes {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-modal {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-pdf {
+    background: transparent;
+    border: 1.5px solid #143d1f;
+    color: #143d1f;
+}
+
+.icon-download {
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid #143d1f;
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.icon-download::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: 5px;
+    width: 2px; height: 8px;
+    background: #143d1f;
+}
+
+.icon-download::after {
+    content: '';
+    position: absolute;
+    top: 3px; left: 2px;
+    width: 5px; height: 5px;
+    border-bottom: 2px solid #143d1f;
+    border-right: 2px solid #143d1f;
+    transform: rotate(45deg);
+}
+
+.btn-pix {
+    background-color: #143d1f;
+    color: white;
+}
+
+.btn-modal:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
 @keyframes aparecer {
     from {
         transform: translateY(-20px);
