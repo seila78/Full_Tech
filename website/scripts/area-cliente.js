@@ -24,24 +24,57 @@ botoes.forEach(botao => {
 
         if (tipo === "suporte") {
             titulo.textContent = "Suporte Técnico";
+            texto.innerHTML = `
+                <div class="center">
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <span class="ticket-id">#1204</span>
+                            <span class="status-badge open">Em Aberto</span>
+                        </div>
+                        
+                        <h3 class="ticket-title">Erro ao processar pagamento via Pix</h3>
+                        <p class="ticket-update">Última atualização: Hoje, às 14:20</p>
+                        
+                        <div class="ticket-footer">
+                            <button class="btn-view">Ver Chamado</button>
+                        </div>
+                    </div>
+                </div>
+            `;
         }
 
         if (tipo === "faturas") {
             titulo.textContent = "Faturas";
             texto.innerHTML = `
-                <img src="../../../imagens/faturas.png" 
-                     alt="Status" 
-                     style="width: 100%; border-radius: 10px; margin-top: 10px; display: block;">
-                <div class="modal-botoes">
-                <button class="btn-modal btn-pdf">
-                    <span class="icon-download"></span>
-                    Baixar PDF
-                </button>
+                <div class="center">   
+                    <div class="fatura-card">
+                        <div class="fatura-info">
+                            <span class="fatura-name">Correção de Bugs</span>
+                            <span class="fatura-date">28/07/2022</span>
+                        </div>
+                        <div class="fatura-value">R$350,00</div>
+                        <div class="status-badge pendente">PENDENTE</div>
+                    </div>
 
-                <button class="btn-modal btn-pix">
-                    Pagar Agora (Pix)
-                </button>
-        </div>
+                    <div class="fatura-card">
+                        <div class="fatura-info">
+                            <span class="fatura-name">Renovação de Assinatura</span>
+                            <span class="fatura-date">01/07/2022</span>
+                        </div>
+                        <div class="fatura-value">R$600,00</div>
+                        <div class="status-badge pago">PAGO</div>
+                    </div>
+                </div>
+                <div class="modal-botoes">
+                    <button class="btn-modal btn-pdf">
+                        <span class="icon-download"></span>
+                        Baixar PDF
+                    </button>
+
+                    <button class="btn-modal btn-pix">
+                        Pagar Agora (Pix)
+                    </button>
+                </div>
             `;
         }
 
