@@ -242,9 +242,9 @@ nav span:hover {
 
 .modal-conteudo {
     background: #ffffff;
-    width: 450px;
+    width: 550px;
     max-width: 90%;
-    padding: 40px;
+    padding: 60px;
     border-radius: 20px;
     position: relative;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -256,6 +256,7 @@ nav span:hover {
     margin-bottom: 15px;
     color: #14C204;
     font-size: 28px;
+    text-align: center;
 }
 
 .modal-conteudo p {
@@ -302,14 +303,14 @@ nav span:hover {
 
 .btn-pdf {
     background: transparent;
-    border: 1.5px solid #143d1f;
-    color: #143d1f;
+    border: 1.5px solid #349e43;
+    color: #349e43;
 }
 
 .icon-download {
     width: 12px;
     height: 12px;
-    border-bottom: 2px solid #143d1f;
+    border-bottom: 2px solid #349e43;
     position: relative;
     margin-right: 10px;
     display: inline-block;
@@ -320,7 +321,7 @@ nav span:hover {
     position: absolute;
     top: -2px; left: 5px;
     width: 2px; height: 8px;
-    background: #143d1f;
+    background: #349e43;
 }
 
 .icon-download::after {
@@ -328,13 +329,13 @@ nav span:hover {
     position: absolute;
     top: 3px; left: 2px;
     width: 5px; height: 5px;
-    border-bottom: 2px solid #143d1f;
-    border-right: 2px solid #143d1f;
+    border-bottom: 2px solid #349e43;
+    border-right: 2px solid #349e43;
     transform: rotate(45deg);
 }
 
 .btn-pix {
-    background-color: #143d1f;
+    background-color: #349e43;
     color: white;
 }
 
