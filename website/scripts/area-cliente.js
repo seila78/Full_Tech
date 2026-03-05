@@ -53,7 +53,7 @@ botoes.forEach(botao => {
                             <span class="fatura-date">28/07/2022</span>
                         </div>
                         <div class="fatura-value">R$350,00</div>
-                        <div class="status-badge pendente">PENDENTE</div>
+                        <div class="fatura-badge pendente">PENDENTE</div>
                     </div>
 
                     <div class="fatura-card">
@@ -62,7 +62,7 @@ botoes.forEach(botao => {
                             <span class="fatura-date">01/07/2022</span>
                         </div>
                         <div class="fatura-value">R$600,00</div>
-                        <div class="status-badge pago">PAGO</div>
+                        <div class="fatura-badge pago">PAGO</div>
                     </div>
                 </div>
                 <div class="modal-botoes">
