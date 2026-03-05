@@ -65,6 +65,8 @@ nav span:hover {
     border-bottom: 2px solid #14C204;
 }
 
+/* Faixa de perfil */
+
 .perfil-faixa {
     display: flex;
     height: 260px;
@@ -140,6 +142,8 @@ nav span:hover {
     margin: auto;
 }
 
+/* Opções */
+
 .grid-opcoes {
     display: flex;
     justify-content: center;
@@ -169,6 +173,8 @@ nav span:hover {
     outline: none;
     box-shadow: 0 0 20px #14C204;
 }
+
+/* Conteúdo dos cards */
 
 .card-label {
     color: #31c441;
@@ -229,6 +235,8 @@ nav span:hover {
     color: #000;
 }
 
+/* Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -280,6 +288,8 @@ nav span:hover {
 .fechar:hover {
     color: #14C204;
 }
+
+/* Conteúdo das Faturas */
 
 .modal-botoes {
     display: flex;
@@ -349,6 +359,56 @@ nav span:hover {
     transform: scale(1.05);
 }
 
+.fatura-card {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(73, 72, 72, 0.945); /* Sombra suave */
+  font-family: sans-serif;
+}   
+
+.fatura-info {
+  flex: 2;
+}
+
+.fatura-name {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.fatura-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.fatura-value {
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.fatura-badge {
+  width: 110px;
+  padding: 8px 0;
+  border-radius: 50px;
+  text-align: center;
+  color: rgb(233, 220, 220);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.pendente { background-color: #800000; }
+.pago { background-color: #008000; }
+
+/*Conteúdo do Suporte */
+
 .ticket-card {
     background: #fff;
     border: 1px solid #e0e0e0;
@@ -381,8 +441,8 @@ nav span:hover {
 }
 
 .open {
-    background: #e3f2fd;
-    color: #1976d2;
+    background: #333;
+    color: #f5f5f5;
 }
 
 .pending {
@@ -420,59 +480,14 @@ nav span:hover {
     transform: scale(1.025);
 }
 
+/*Centraliza os conteudos dentro do modal*/
+
 .center {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.fatura-card {
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 15px 25px;
-  margin-bottom: 15px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  font-family: sans-serif;
-}
-
-.fatura-info {
-  flex: 2;
-}
-
-.fatura-name {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.fatura-date {
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.fatura-value {
-  flex: 1;
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-align: right;
-  margin-right: 20px;
-}
-
-.status-badge {
-  width: 110px;
-  padding: 8px 0;
-  border-radius: 50px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
-.pendente { background-color: #800000; }
-.pago { background-color: #008000; }
 
 @keyframes aparecer {
     from {
