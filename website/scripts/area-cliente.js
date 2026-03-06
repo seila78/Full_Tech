@@ -64,6 +64,24 @@ botoes.forEach(botao => {
                         <div class="fatura-value">R$600,00</div>
                         <div class="fatura-badge pago">PAGO</div>
                     </div>
+
+                    <div class="fatura-card">
+                        <div class="fatura-info">
+                            <span class="fatura-name">Criação Página Equipe</span>
+                            <span class="fatura-date">23/06/2022</span>
+                        </div>
+                        <div class="fatura-value">R$200,00</div>
+                        <div class="fatura-badge pago">PAGO</div>
+                    </div>
+
+                    <div class="fatura-card">
+                        <div class="fatura-info">
+                            <span class="fatura-name">Assinatura Plano Básico</span>
+                            <span class="fatura-date">01/07/2022</span>
+                        </div>
+                        <div class="fatura-value">R$3500,00</div>
+                        <div class="fatura-badge pago">PAGO</div>
+                    </div>
                 </div>
                 <div class="modal-botoes">
                     <button class="btn-modal btn-pdf">
