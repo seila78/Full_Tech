@@ -15,7 +15,7 @@ botoes.forEach(botao => {
         caixa.style.background = "#ffffff";
 
         if (tipo === "status") {
-            titulo.textContent = "Faturas";
+            titulo.textContent = "Status do Serviço";
         }
 
         if (tipo === "dominio") {
