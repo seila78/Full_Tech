@@ -307,7 +307,7 @@ nav span:hover {
     font-weight: 600;
     font-size: 15px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease;
     text-decoration: none;
     border: none;
 }
@@ -409,6 +409,7 @@ nav span:hover {
 .fatura-card:hover {
     transform: scale(1.05);
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(39, 126, 52, 0.945);
 }
 
 .pendente {
@@ -495,6 +496,86 @@ nav span:hover {
 
 .ticket-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(39, 126, 52, 0.945);
+}
+
+/*Conteúdo do Domínio */
+
+.dominio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 5px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.dominio-item {
+    background-color: #eff1f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 22px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.dominio-url {
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+}
+
+.dominio-status-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge-ativo {
+    background-color: #349e43;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.dominio-data {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.2;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dominio-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-config-dns {
+    background: transparent;
+    border: 2px solid #349e43;
+    color: #349e43;
+    padding: 10px 40px;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-config-dns:hover {
+    background-color: #277e34;
+    color: #ffffff;
+}
+
+.dominio-item:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(39, 126, 52, 0.945);
+    cursor: pointer;
 }
 
 /*Conteúdo do Suporte */
@@ -505,8 +586,17 @@ nav span:hover {
     margin-top: 20px;
 }
 
-.col-main { flex: 2; }
-.col-side { flex: 1; display: flex; flex-direction: column; gap: 10px; justify-content: center; }
+.col-main {
+    flex: 2;
+}
+
+.col-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
 
 .divisor-v {
     width: 1px;
@@ -518,7 +608,7 @@ nav span:hover {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .btn-modal-action {
@@ -529,10 +619,13 @@ nav span:hover {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-.btn-modal-action:hover { background: #0e8a03; }
+.btn-modal-action:hover {
+    background: #0e8a03;
+    transform: scale(1.05);
+}
 
 .ponto-status {
     height: 10px;
@@ -545,77 +638,77 @@ nav span:hover {
 }
 
 .stepper-box {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .stepper-step {
-  display: flex;
-  gap: 15px;
-  position: relative;
-  padding-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .stepper-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  z-index: 2;
-  background-color: #333; 
-  color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+    background-color: #333;
+    color: #fff;
 }
 
 .stepper-completed .stepper-circle {
-  background-color: #14C204;
-  color: #000;
+    background-color: #14C204;
+    color: #000;
 }
 
 .stepper-active .stepper-circle {
-  background-color: #14C204;
-  color: #000;
-  box-shadow: 0 0 10px rgba(20, 194, 4, 0.5);
+    background-color: #14C204;
+    color: #000;
+    box-shadow: 0 0 10px rgba(20, 194, 4, 0.5);
 }
 
 .stepper-line {
-  position: absolute;
-  left: 14px;
-  top: 30px;
-  bottom: 0;
-  width: 2px;
-  background-color: #333;
-  z-index: 1;
+    position: absolute;
+    left: 14px;
+    top: 30px;
+    bottom: 0;
+    width: 2px;
+    background-color: #333;
+    z-index: 1;
 }
 
 .stepper-completed .stepper-line {
-  background-color: #14C204;
+    background-color: #14C204;
 }
 
 .stepper-content {
-  text-align: left;
+    text-align: left;
 }
 
 .stepper-title {
-  font-weight: bold;
-  font-size: 16px;
-  color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
 }
 
 .stepper-status {
-  font-size: 12px;
-  color: #14C204;
+    font-size: 12px;
+    color: #14C204;
 }
 
 .stepper-time {
-  font-size: 11px;
-  color: #888;
+    font-size: 11px;
+    color: #888;
 }
 
 .stepper-step:last-child .stepper-line {
-  display: none;
+    display: none;
 }
 
 /*Centraliza os conteudos dentro do modal*/
