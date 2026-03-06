@@ -60,7 +60,30 @@ botoes.forEach(botao => {
         }
 
         if (tipo === "dominio") {
-            titulo.textContent = "Gerenciamento de Domínio";
+            titulo.textContent = "DOMÍNIOS";
+            texto.innerHTML = `
+                <div class="dominio-container">
+                    <div class="dominio-item">
+                        <span class="dominio-url">estudecloud.com</span>
+                        <div class="dominio-status-box">
+                            <span class="badge-ativo">ATIVO</span>
+                            <span class="dominio-data">Ativo desde:<br>07/08/2024</span>
+                        </div>
+                    </div>
+
+                    <div class="dominio-item">
+                        <span class="dominio-url">almeida.cisco</span>
+                        <div class="dominio-status-box">
+                            <span class="badge-ativo">ATIVO</span>
+                            <span class="dominio-data">Ativo desde:<br>22/08/2024</span>
+                        </div>
+                    </div>
+
+                    <div class="dominio-footer">
+                        <button class="btn-config-dns">Configurar DNS</button>
+                    </div>
+                </div>
+            `;
         }
 
         if (tipo === "suporte") {
