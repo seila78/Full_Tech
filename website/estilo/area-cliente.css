@@ -360,52 +360,68 @@ nav span:hover {
 }
 
 .fatura-card {
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 15px 25px;
-  margin-bottom: 15px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(73, 72, 72, 0.945); /* Sombra suave */
-  font-family: sans-serif;
-}   
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(73, 72, 72, 0.945);
+    font-family: sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
 
 .fatura-info {
-  flex: 2;
+    flex: 2;
 }
 
 .fatura-name {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #333;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
 }
 
 .fatura-date {
-  font-size: 0.9rem;
-  color: #777;
+    font-size: 0.9rem;
+    color: #777;
 }
 
 .fatura-value {
-  flex: 1;
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-align: right;
-  margin-right: 20px;
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .fatura-badge {
-  width: 110px;
-  padding: 8px 0;
-  border-radius: 50px;
-  text-align: center;
-  color: rgb(233, 220, 220);
-  font-weight: bold;
-  font-size: 0.8rem;
+    width: 110px;
+    padding: 8px 0;
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(233, 220, 220);
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
 }
 
-.pendente { background-color: #800000; }
-.pago { background-color: #008000; }
+.fatura-card:hover {
+    transform: scale(1.05);
+}
+
+.fatura-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(73, 72, 72, 0.945);
+}
+
+.pendente {
+    background-color: #800000;
+}
+
+.pago {
+    background-color: #008000;
+}
 
 /*Conteúdo do Suporte */
 
@@ -415,9 +431,10 @@ nav span:hover {
     border-radius: 12px;
     padding: 16px;
     max-width: 350px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(44, 44, 44, 0.945);
     font-family: sans-serif;
     line-height: 1.5;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
 }
 
 .ticket-header {
@@ -478,6 +495,10 @@ nav span:hover {
 .btn-view:hover {
     background: #349e43;
     transform: scale(1.025);
+}
+
+.ticket-card:hover {
+    transform: scale(1.05);
 }
 
 /*Centraliza os conteudos dentro do modal*/
