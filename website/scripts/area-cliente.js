@@ -55,7 +55,8 @@ botoes.forEach(botao => {
                         <h3 style="color: #14C204">25/05/2026</h3>
                         <button class="btn-modal-action">Ver Detalhes</button>
                     </div>
-                </div>`;
+                </div>
+            `;
         }
 
         if (tipo === "dominio") {
@@ -90,7 +91,7 @@ botoes.forEach(botao => {
                     <div class="fatura-card">
                         <div class="fatura-info">
                             <span class="fatura-name">Correção de Bugs</span>
-                            <span class="fatura-date">28/07/2022</span>
+                            <span class="fatura-date">28/01/2026</span>
                         </div>
                         <div class="fatura-value">R$350,00</div>
                         <div class="fatura-badge pendente">PENDENTE</div>
@@ -99,7 +100,7 @@ botoes.forEach(botao => {
                     <div class="fatura-card">
                         <div class="fatura-info">
                             <span class="fatura-name">Renovação de Assinatura</span>
-                            <span class="fatura-date">01/07/2022</span>
+                            <span class="fatura-date">01/01/2026</span>
                         </div>
                         <div class="fatura-value">R$600,00</div>
                         <div class="fatura-badge pago">PAGO</div>
@@ -108,7 +109,7 @@ botoes.forEach(botao => {
                     <div class="fatura-card">
                         <div class="fatura-info">
                             <span class="fatura-name">Criação Página Equipe</span>
-                            <span class="fatura-date">23/06/2022</span>
+                            <span class="fatura-date">23/12/2025</span>
                         </div>
                         <div class="fatura-value">R$200,00</div>
                         <div class="fatura-badge pago">PAGO</div>
@@ -117,7 +118,7 @@ botoes.forEach(botao => {
                     <div class="fatura-card">
                         <div class="fatura-info">
                             <span class="fatura-name">Assinatura Plano Básico</span>
-                            <span class="fatura-date">01/07/2022</span>
+                            <span class="fatura-date">01/12/2025</span>
                         </div>
                         <div class="fatura-value">R$3500,00</div>
                         <div class="fatura-badge pago">PAGO</div>
