@@ -408,11 +408,7 @@ nav span:hover {
 
 .fatura-card:hover {
     transform: scale(1.05);
-}
-
-.fatura-badge:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(73, 72, 72, 0.945);
+    cursor: pointer;
 }
 
 .pendente {
