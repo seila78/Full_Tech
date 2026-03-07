@@ -76,17 +76,19 @@ nav span:hover {
     transform: scale(1.05);
 }
 
-.membrosIndividual img{
+.fotosCards{
     width: 200px;
     height: 200px;  
     margin: 20px;
     border-radius: 100px;
 }
 
-.membrosIndividual a{
-    color: black;
-    text-decoration: none;
+.githubImagens{
+    width: 30px;
+    height: 30px;
+    margin-left: 190px;
 }
+
 .cardMembros{
     display: flex;
     flex-direction: row;
