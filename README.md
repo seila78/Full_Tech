@@ -28,4 +28,4 @@ O projeto continuará evoluindo conforme o avanço do curso:
 3. Abra o arquivo `index.html` no seu navegador de preferência.
 
 ---
-Desenvolvido por Felipe Espada, Vitor Oliveira, Gustavo Novaes, Lucas Zangrande e Gustavo Ramalho.
+Desenvolvido por <a href="https://github.com/Espada-23">Felipe Espada</a>, <a href="https://github.com/seila78">Vitor Oliveira</a>,<a href="https://github.com/GutsGusta"> Gustavo Novaes</a>, <a href="https://github.com/lvzangrande"> Lucas Zangrande</a> e <a href="https://github.com/Ramalh0VT">Gustavo Ramalho</a>.
