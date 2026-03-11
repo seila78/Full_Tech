@@ -145,6 +145,9 @@ nav a.cssbuttons-io-button span {
     color: black;
     font-size: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .NossasTecTexto h1 {
