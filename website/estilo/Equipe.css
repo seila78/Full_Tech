@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f5f5f5;
     font-family: sans-serif;
 }
@@ -59,18 +59,55 @@ nav span:hover {
     border-bottom: 2px solid #14C204;
 }
 
-.membros{
+.cssbuttons-io-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: linear-gradient(0deg, #14a73e 0%, #14c204 100%);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    transition: all 0.3s ease;
+}
+
+.cssbuttons-io-button svg {
+    margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e;
+    transform: scale(1.05);
+}
+
+.cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+nav a.cssbuttons-io-button span {
+    color: #f5f5f5;
+    text-transform: none;
+    border-bottom: none;
+    text-transform: uppercase;
+}
+
+.membros {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
-.membrosIndividual{
+
+.membrosIndividual {
     background-color: #14c204;
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    text-align: center ;
+    text-align: center;
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 50px;
@@ -79,62 +116,62 @@ nav span:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.membrosIndividual:hover{
+.membrosIndividual:hover {
     transform: scale(1.05);
 }
 
-.fotosCards{
+.fotosCards {
     width: 200px;
-    height: 200px;  
+    height: 200px;
     margin: 20px;
     border-radius: 100px;
 }
 
-.githubImagens{
+.githubImagens {
     width: 30px;
     height: 30px;
     margin-left: 190px;
 }
 
-.cardMembros{
+.cardMembros {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 90%;
 }
 
-.cardMembros p{
+.cardMembros p {
     font-size: 20px;
 }
 
-.barraSuperior{
+.barraSuperior {
     background-color: black;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #14c204;
-}   
+}
 
-.barraSuperior img{
+.barraSuperior img {
     width: 100px;
     height: 50px;
 }
 
-.linha{
+.linha {
     width: 90%;
     height: 2px;
     background-color: #14c204;
     margin: 20px 0;
 }
 
-footer{
+footer {
     background-color: black;
     height: 200px;
     color: #f5f5f5;
 }
 
-.linhaFooter{
+.linhaFooter {
     width: 2px;
     height: 120px;
     background-color: #14c204;
@@ -143,7 +180,7 @@ footer{
     margin-top: 20px;
 }
 
-.barraInferior{
+.barraInferior {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +188,7 @@ footer{
     padding: 20px;
 }
 
-.parteFooter{
+.parteFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,11 +196,11 @@ footer{
     gap: 10px;
 }
 
-.parteFooter h3{
+.parteFooter h3 {
     color: #14c204;
 }
 
-.parteFooter a{
+.parteFooter a {
     color: #f5f5f5;
     text-decoration: none;
 }

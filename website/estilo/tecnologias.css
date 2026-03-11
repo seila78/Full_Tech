@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f5f5f5;
     font-family: sans-serif;
 }
@@ -59,19 +59,55 @@ nav span:hover {
     border-bottom: 2px solid #14C204;
 }
 
-.cardTecnologias{
+.cssbuttons-io-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: linear-gradient(0deg, #14a73e 0%, #14c204 100%);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    transition: all 0.3s ease;
+}
+
+.cssbuttons-io-button svg {
+    margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e;
+    transform: scale(1.05);
+}
+
+.cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+nav a.cssbuttons-io-button span {
+    color: #f5f5f5;
+    text-transform: none;
+    border-bottom: none;
+    text-transform: uppercase;
+}
+
+.cardTecnologias {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
-.cardIndividual{
+.cardIndividual {
     background-color: #14c204;
     width: 250px;
     height: 400px;
     border-radius: 20px;
-    text-align: center ;
+    text-align: center;
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 50px;
@@ -81,18 +117,18 @@ nav span:hover {
     justify-content: center;
 }
 
-.cardIndividual:hover{
+.cardIndividual:hover {
     transform: scale(1.05);
 }
 
-.cardIndividual img{
+.cardIndividual img {
     width: 200px;
-    height: 200px;  
+    height: 200px;
     margin: 20px;
     border-radius: 100px;
 }
 
-.separacaoCards{
+.separacaoCards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,26 +136,27 @@ nav span:hover {
     flex-wrap: wrap;
     margin-top: 20px;
 }
-.NossasTecTexto{
+
+.NossasTecTexto {
     color: black;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.NossasTecTexto h1{
+.NossasTecTexto h1 {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-}   
+}
 
-footer{
+footer {
     background-color: black;
     height: 200px;
     color: #f5f5f5;
 }
 
-.linhaFooter{
+.linhaFooter {
     width: 2px;
     height: 120px;
     background-color: #14c204;
@@ -128,7 +165,7 @@ footer{
     margin-top: 20px;
 }
 
-.barraInferior{
+.barraInferior {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +173,7 @@ footer{
     padding: 20px;
 }
 
-.parteFooter{
+.parteFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,11 +181,11 @@ footer{
     gap: 10px;
 }
 
-.parteFooter h3{
+.parteFooter h3 {
     color: #14c204;
 }
 
-.parteFooter a{
+.parteFooter a {
     color: #f5f5f5;
     text-decoration: none;
 }

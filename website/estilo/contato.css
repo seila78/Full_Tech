@@ -66,6 +66,42 @@
         border-bottom: 2px solid #14C204;
     }
 
+    .cssbuttons-io-button {
+        display: inline-flex;
+        align-items: center;
+        font-family: inherit;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 0.7em 1.4em 0.7em 1.1em;
+        color: white;
+        background: linear-gradient(0deg, #14a73e 0%, #14c204 100%);
+        border: none;
+        letter-spacing: 0.05em;
+        border-radius: 20em;
+        transition: all 0.3s ease;
+    }
+
+    .cssbuttons-io-button svg {
+        margin-right: 6px;
+    }
+
+    .cssbuttons-io-button:hover {
+        box-shadow: 0 0.5em 1.5em -0.5em #14a73e;
+        transform: scale(1.05);
+    }
+
+    .cssbuttons-io-button:active {
+        box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+    }
+
+    nav a.cssbuttons-io-button span {
+        color: #f5f5f5;
+        text-transform: none;
+        border-bottom: none;
+        text-transform: uppercase;
+    }
+
     main {
         flex: 1;
         display: flex;
