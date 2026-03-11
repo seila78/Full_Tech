@@ -1,21 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-font-family: Arial, Helvetica, sans-serif;
-height: 100vh;
-background-color: #f5f5f5;
-/*background-image: url(../imagens/background.jpeg);
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #f5f5f5;
+    /*background-image: url(../imagens/background.jpeg);
 background-size: cover;       
 background-position: center;  
 background-repeat: no-repeat;
 */
-justify-content: center;
-color: #fff;
+    justify-content: center;
+    color: #fff;
 }
-header { 
+
+header {
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
@@ -24,7 +26,8 @@ header {
     height: 85px;
     display: flex;
     align-items: center;
-    text-transform: uppercase;                                             /*Não mexer no Header*/
+    text-transform: uppercase;
+    /*Não mexer no Header*/
     justify-content: space-between;
     padding-left: 65px;
     padding-right: 65px;
@@ -64,24 +67,65 @@ nav span:hover {
     color: #f5f5f5;
     border-bottom: 2px solid #14C204;
 }
-.line{
+
+.cssbuttons-io-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: linear-gradient(0deg, #14a73e 0%, #14c204 100%);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    transition: all 0.3s ease;
+}
+
+.cssbuttons-io-button svg {
+    margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e;
+    transform: scale(1.05);
+}
+
+.cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+nav a.cssbuttons-io-button span {
+  color: #f5f5f5;        
+  text-transform: none;   
+  border-bottom: none;    
+  text-transform: uppercase;
+}
+
+.line {
     background-color: #14c204;
     width: 10px;
     height: auto;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-h1{
+
+h1 {
     text-align: center;
     margin: 5vh;
     color: #14c204;
 }
-h1 a{
+
+h1 a {
     color: #14c204;
 }
-.divisoria img{
+
+.divisoria img {
     width: 300px;
     height: auto;
     padding: 30px;
@@ -90,9 +134,10 @@ h1 a{
     background-color: #000000;
     align-items: center;
     justify-content: center;
-    
+
 }
-.fundoContratar{
+
+.fundoContratar {
     background-color: black;
     height: 750px;
     display: flex;
@@ -100,7 +145,8 @@ h1 a{
     border-top: 10px solid #14c204;
     border-bottom: 10px solid #14c204;
 }
-.fundoManutecao{
+
+.fundoManutecao {
     background-color: black;
     height: 750px;
     display: flex;
@@ -108,70 +154,92 @@ h1 a{
     border-top: 10px solid #14c204;
     border-bottom: 10px solid #14c204;
 }
+
 /*.contratar{
     
 }*/
-.titulotable{
+.titulotable {
     transition: 0.2s;
     text-shadow: 0px 0px 0px #14c204;
 }
-.titulotable:hover{
+
+.titulotable:hover {
     transform: scale(1.05);
     text-shadow: 0px 0px 4px #14c204;
 }
-table{
+
+table {
     margin: 100px;
     font-size: 14px;
     /*empty-cells: hide;*/
 }
-table tr{
+
+table tr {
     width: 1px;
     height: 1px;
 }
-table td{
+
+table td {
     border: 2px solid #14c204;
     text-align: center;
     padding: 20px;
     background-color: transparent;
 }
-.basico, .completo, .premium, .barato,.rasuavel, .caro{
+
+.basico,
+.completo,
+.premium,
+.barato,
+.rasuavel,
+.caro {
     font-size: 20px;
     color: black;
     background-color: #14c204;
     transition: 0.2s;
     box-shadow: 0px 0px 0px;
 }
-.basico:hover, .completo:hover, .premium:hover, .barato:hover,.rasuavel:hover, .caro:hover{
+
+.basico:hover,
+.completo:hover,
+.premium:hover,
+.barato:hover,
+.rasuavel:hover,
+.caro:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px;
 }
-.portifolio{
+
+.portifolio {
     justify-content: center;
     display: flex;
 }
-.box{
+
+.box {
     width: 200px;
     height: 200px;
     margin: 30px;
     margin-bottom: 60px;
     border-radius: 25px;
-    background-color:#14c204;
+    background-color: #14c204;
     transition: 0.5s;
 }
-.box:hover{
- transform: scale(1.15);   
+
+.box:hover {
+    transform: scale(1.15);
 }
-.box img{
+
+.box img {
     align-content: center;
     justify-content: center;
 }
-footer{
+
+footer {
     background-color: black;
     height: 200px;
     color: #f5f5f5;
 }
 
-.linhaFooter{
+.linhaFooter {
     width: 2px;
     height: 120px;
     background-color: #14c204;
@@ -180,7 +248,7 @@ footer{
     margin-top: 20px;
 }
 
-.barraInferior{
+.barraInferior {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +256,7 @@ footer{
     padding: 20px;
 }
 
-.parteFooter{
+.parteFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,11 +264,11 @@ footer{
     gap: 10px;
 }
 
-.parteFooter h3{
+.parteFooter h3 {
     color: #14c204;
 }
 
-.parteFooter a{
+.parteFooter a {
     color: #f5f5f5;
     text-decoration: none;
 }
