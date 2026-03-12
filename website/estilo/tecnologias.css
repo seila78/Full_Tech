@@ -170,6 +170,8 @@ nav a.cssbuttons-io-button span {
     text-align: center;
 }
 
+/*FOOTERRRR*/
+
 .site-footer {
     background-color: #000000;
     color: #f5f5f5;
@@ -181,7 +183,6 @@ nav a.cssbuttons-io-button span {
 .site-footer .footer__container {
     max-width: 1200px;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
     align-items: start;

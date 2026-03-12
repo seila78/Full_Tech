@@ -99,6 +99,8 @@ nav a.cssbuttons-io-button span {
     text-transform: uppercase;
 }
 
+/*Começo da página*/
+
 .membros {
     display: flex;
     justify-content: space-around;
@@ -107,7 +109,9 @@ nav a.cssbuttons-io-button span {
 }
 
 .membrosIndividual {
-    background-color: #14c204;
+    background-color: #f5f5f5;
+    border: solid 2px #14c204;
+    color: #000;
     width: 250px;
     height: 350px;
     border-radius: 20px;
@@ -148,6 +152,16 @@ nav a.cssbuttons-io-button span {
     font-size: 20px;
 }
 
+.parteContraria {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2px #14c204;
+    border-bottom: solid 2px #14c204;
+}
+
 .barraSuperior {
     background-color: black;
     height: 100px;
@@ -163,11 +177,13 @@ nav a.cssbuttons-io-button span {
 }
 
 .linha {
-    width: 90%;
+    width: 100%;
     height: 2px;
     background-color: #14c204;
     margin: 20px 0;
 }
+
+/*Footer*/
 
 .site-footer {
     background-color: #000000;
