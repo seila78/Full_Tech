@@ -315,45 +315,16 @@ nav span:hover {
     color: #349e43;
 }
 
-.icon-download {
-    width: 12px;
-    height: 12px;
-    border-bottom: 2px solid #349e43;
-    position: relative;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.icon-download::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 5px;
-    width: 2px;
-    height: 8px;
-    background: #349e43;
-}
-
-.icon-download::after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 2px;
-    width: 5px;
-    height: 5px;
-    border-bottom: 2px solid #349e43;
-    border-right: 2px solid #349e43;
-    transform: rotate(45deg);
-}
-
 .btn-pix {
     background-color: #349e43;
     color: white;
 }
 
 .btn-modal:hover {
-    opacity: 0.8;
+    border: none;
+    background-color: #277e34;
     transform: scale(1.05);
+    color: white;
 }
 
 .fatura-card {
@@ -565,6 +536,7 @@ nav span:hover {
 }
 
 .btn-config-dns:hover {
+    border: none;
     background-color: #277e34;
     color: #ffffff;
 }

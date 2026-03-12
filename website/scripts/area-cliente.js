@@ -149,7 +149,6 @@ botoes.forEach(botao => {
                 </div>
                 <div class="modal-botoes">
                     <button class="btn-modal btn-pdf">
-                        <span class="icon-download"></span>
                         Baixar PDF
                     </button>
 
